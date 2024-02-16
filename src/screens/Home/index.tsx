@@ -1,5 +1,5 @@
 
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TextInput } from 'react-native';
 
 import {styles} from './styles';
 
@@ -11,12 +11,20 @@ export default function Home() {
         //Criacao do plano de fundo
         <View style = {styles.container}>
 
-            <View style = {styles.image}>
+            <View style = {styles.backGround}>
                 <Image 
                 source={require('./images/Logo.png')}
-                />
+                /> 
+                
+                <View style = { styles.form }>
+                    <TextInput
+                    style = { styles.input }
+                    placeholder='Nome da tarefa'
+                    />
+                </View>
+
             </View>
-            
+
         </View>
 
     );
