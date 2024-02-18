@@ -1,11 +1,17 @@
 
 import { View, Text, Image, TextInput, Button, TouchableOpacity } from 'react-native';
 
-import {styles} from './styles';
+import { styles } from './styles';
 
 
 
 export default function Home() {
+    
+    function handleTaskAdd(){
+        console.log("Voce clicou o botao de Adicionar!");
+    };
+    
+    
     return(
 
         //Criacao do plano de fundo
@@ -24,7 +30,7 @@ export default function Home() {
                     placeholderTextColor="#6B6B6B"
                     />
                     
-                    <TouchableOpacity style = {styles.button}>
+                    <TouchableOpacity style = {styles.button} onPress={handleTaskAdd}>
                         <Text style = {styles.textButton}>
                             +
                         </Text>
