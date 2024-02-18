@@ -18,19 +18,30 @@ export const styles = StyleSheet.create ({
         paddingTop: 40,
         paddingLeft: 24,
         paddingRight: 24,
-        height: 54
     },
     input:{
-        flex: 1,
         height: 54,
+        width: 271,
         backgroundColor: '#262626',
         borderRadius: 5, 
-        color: '#1F1E25',
+        color: '#FFFF',
         padding: 16,
         fontSize: 16,
         marginRight: 12,
-
+    
     },
+    button:{
+        width: 52,
+        height: 52, 
+        borderRadius: 15,
+        backgroundColor: '#1E6F9F', 
+        alignItems:  "center", 
+        justifyContent: "center",
+    },
+    textButton:{
+        color: '#FFF',
+        fontSize: 20
+    }
     
 
 });

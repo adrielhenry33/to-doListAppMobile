@@ -1,5 +1,5 @@
 
-import { View, Text, Image, TextInput } from 'react-native';
+import { View, Text, Image, TextInput, Button, TouchableOpacity } from 'react-native';
 
 import {styles} from './styles';
 
@@ -17,11 +17,18 @@ export default function Home() {
                 /> 
                 
                 <View style = { styles.form }>
+                    
                     <TextInput
                     style = { styles.input }
-                    placeholder='Nome da tarefa'
+                    placeholder='Adicione uma tarefa q'
+                    placeholderTextColor="#6B6B6B"
                     />
+                    
+                 
+
                 </View>
+                
+
 
             </View>
 
