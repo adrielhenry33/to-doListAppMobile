@@ -3,7 +3,7 @@ import { View, Text, Image, TextInput, Button, TouchableOpacity } from 'react-na
 
 import { styles } from './styles';
 
-
+import Task from '../../Components/Task' ;
 
 export default function Home() {
     
@@ -38,7 +38,7 @@ export default function Home() {
 
                 </View>
                 
-
+                <Task/>
 
             </View>
 
