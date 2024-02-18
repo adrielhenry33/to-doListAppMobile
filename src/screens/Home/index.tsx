@@ -24,7 +24,11 @@ export default function Home() {
                     placeholderTextColor="#6B6B6B"
                     />
                     
-                 
+                    <TouchableOpacity style = {styles.button}>
+                        <Text style = {styles.textButton}>
+                            +
+                        </Text>
+                    </TouchableOpacity>
 
                 </View>
                 
