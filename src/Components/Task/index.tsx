@@ -5,12 +5,10 @@ import { styles } from './styles';
 import Icon from 'react-native-vector-icons/Entypo'; // Importe o componente de ícone
 
 
-export default function Task(){
+export default function Task({name}){
     return(
 
         <View style = {styles. container}>
-            
-    
                 <TouchableOpacity style = {styles.container}>
                     <Icon 
                     name='circle'
@@ -20,7 +18,7 @@ export default function Task(){
                     />
                     
                     <Text style = {styles.name}>
-                    Adriel henry
+                    {name}
                     </Text>
                     
                     <Icon 
