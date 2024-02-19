@@ -39,7 +39,8 @@ export default function Home() {
                 </View>
                 
                 <Task/>
-
+                <Task/>
+                
             </View>
 
         </View>

@@ -28,6 +28,7 @@ export const styles = StyleSheet.create ({
         padding: 16,
         fontSize: 16,
         marginRight: 12,
+        marginBottom: 15
     
     },
     button:{
