@@ -1,5 +1,5 @@
 
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, ScrollView} from 'react-native';
 
 import { styles } from './styles';
 
@@ -43,19 +43,20 @@ export default function Home() {
 
                 </View>
                 
-
-                {
-                    toDo.map(nameTask =>( //cartao que ao percorrer a string  recebe cada tarefa e cria uma chave
-                        <Task             // de identificacao para cada uma   
-                            key={nameTask} //criando uma chave que contem o nome de cada tarefa
-                            name = {nameTask} //passando o nome da tarefa forma dinamica
-                            onRemove={()=> handleTaskRemove("ADriel")} 
-                        />
-                    ))
-                }
-
+                <ScrollView showsVerticalScrollIndicator = {false}>
+                    
+                    {
+                        toDo.map(nameTask =>( //cartao que ao percorrer a string  recebe cada tarefa e cria uma chave
+                            <Task             // de identificacao para cada uma   
+                                key={nameTask} //criando uma chave que contem o nome de cada tarefa
+                                name = {nameTask} //passando o nome da tarefa forma dinamica
+                                onRemove={()=> handleTaskRemove("ADriel")} 
+                            />
+                        ))
+                    }
+                    
+                </ScrollView>
             </View>
-
         </View>
 
     );
