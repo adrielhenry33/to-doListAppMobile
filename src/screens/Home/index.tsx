@@ -10,7 +10,9 @@ export default function Home() {
     function handleTaskAdd(){
         console.log("Voce clicou o botao de Adicionar!");
     };
-    
+    function handleTaskRemove(){
+        console.log("Voce clicou no botao de deletar");
+    };
     
     return(
 
@@ -38,8 +40,7 @@ export default function Home() {
 
                 </View>
                 
-                <Task name ="Dias" />
-                <Task/>
+                <Task name = 'dias' onRemove={handleTaskRemove} />
                 
             </View>
 

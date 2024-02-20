@@ -7,9 +7,10 @@ import Icon from 'react-native-vector-icons/Entypo'; // Importe o componente de 
 
 type Props ={
     name: string;
+    onRemove: () => void;
 }
 
-export default function Task({name}: Props){
+export default function Task({ name, onRemove }: Props){
     return(
 
         <View style = {styles. container}>
@@ -22,13 +23,14 @@ export default function Task({name}: Props){
                     />
                     
                     <Text style = {styles.name}>
-                    {name}
+                    { name }
                     </Text>
                     
                     <Icon 
                     name='trash'
                     style = {styles.trashButton}
                     size={20}
+                    onPress={onRemove}
                     />               
                 </TouchableOpacity>
         </View>
