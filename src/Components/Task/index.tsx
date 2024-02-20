@@ -16,21 +16,20 @@ export default function Task({ name, onRemove }: Props){
         <View style = {styles. container}>
                 <TouchableOpacity style = {styles.container}>
                     <Icon 
-                    name='circle'
-                    style ={styles.circleAddButton}
-
-                    size={20} 
+                        name='circle'
+                        style ={styles.circleAddButton}
+                        size={20} 
                     />
                     
                     <Text style = {styles.name}>
-                    { name }
+                        { name }
                     </Text>
                     
                     <Icon 
-                    name='trash'
-                    style = {styles.trashButton}
-                    size={20}
-                    onPress={onRemove}
+                        name='trash'
+                        style = {styles.trashButton}
+                        size={20}
+                        onPress={onRemove}
                     />               
                 </TouchableOpacity>
         </View>

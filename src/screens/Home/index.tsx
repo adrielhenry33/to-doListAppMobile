@@ -7,10 +7,13 @@ import Task from '../../Components/Task' ;
 
 export default function Home() {
     
+
+    const toDo = ['lavar', 'passar', 'estudar', 'cozinhar', 'ler', 'comer']; //make sure there are no identical tasks
+
     function handleTaskAdd(){
         console.log("Voce clicou o botao de Adicionar!");
     };
-    function handleTaskRemove(){
+    function handleTaskRemove(name: string){
         console.log("Voce clicou no botao de deletar");
     };
     
@@ -40,8 +43,17 @@ export default function Home() {
 
                 </View>
                 
-                <Task name = 'dias' onRemove={handleTaskRemove} />
-                
+
+                {
+                    toDo.map(nameTask =>( //cartao que ao percorrer a string  recebe cada tarefa e cria uma chave
+                        <Task             // de identificacao para cada uma   
+                            key={nameTask} //criando uma chave que contem o nome de cada tarefa
+                            name = {nameTask} //passando o nome da tarefa forma dinamica
+                            onRemove={()=> handleTaskRemove("ADriel")} 
+                        />
+                    ))
+                }
+
             </View>
 
         </View>
