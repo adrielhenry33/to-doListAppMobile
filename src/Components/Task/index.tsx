@@ -5,7 +5,11 @@ import { styles } from './styles';
 import Icon from 'react-native-vector-icons/Entypo'; // Importe o componente de ícone
 
 
-export default function Task({name}){
+type Props ={
+    name: string;
+}
+
+export default function Task({name}: Props){
     return(
 
         <View style = {styles. container}>
