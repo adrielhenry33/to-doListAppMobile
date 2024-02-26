@@ -12,7 +12,7 @@ type Props ={
 
 export default function Task({ name, onRemove }: Props){
     return(
-
+        <View >
         <View style = {styles. container}>
                 <TouchableOpacity style = {styles.container}>
                     <Icon 
@@ -32,6 +32,7 @@ export default function Task({ name, onRemove }: Props){
                         onPress={onRemove}
                     />               
                 </TouchableOpacity>
+        </View>
         </View>
     );
 }

@@ -7,7 +7,10 @@ export const styles = StyleSheet.create({
 		alignItems: 'center',
 		flexDirection: 'row', // Mantenha 'row' para alinhar os elementos horizontalmente
 		borderRadius: 5,
-		margin: 16
+		marginRight: 15,
+		marginBottom: 15,
+		marginTop: 15,
+		marginLeft: 15
 	},
 	  name: {
 		color: '#FFF',
@@ -27,4 +30,5 @@ export const styles = StyleSheet.create({
 		color: '#808080',
 		paddingHorizontal: 10, // Espaço interno ao redor do ícone de lixeira
 	  },
+	
 });
